@@ -1,0 +1,12 @@
+language: c
+
+compiler:
+    - gcc
+
+matrix:
+    include:
+        - os: linux
+        - os: osx
+          osx_image: xcode9.1
+
+script: gcc -I lib -o glue-fonts src/glue-fonts.c lib/md5.c
