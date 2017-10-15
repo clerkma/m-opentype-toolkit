@@ -9,4 +9,4 @@ matrix:
         - os: osx
           osx_image: xcode9.1
 
-script: gcc -I lib -o glue-fonts src/glue-fonts.c lib/md5.c
+script: gcc -std=c99 -I lib -o glue-fonts src/glue-fonts.c lib/md5.c
